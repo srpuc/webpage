@@ -1,4 +1,4 @@
-.navbar{
+.nav{
     overflow: hidden;
   background-color: #333;
   position: fixed;
@@ -6,11 +6,11 @@
   width: 100%;
 }
 
-.navbar-right{
+.nav-right{
     float: right;
 }
 
-.navbar a{
+.nav a{
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -19,7 +19,7 @@
     font-size: 17px;
 }
 
-.navbar a:hover{
+.nav a:hover{
     background-color: #f2f2f2;
     color: brown;
 }
