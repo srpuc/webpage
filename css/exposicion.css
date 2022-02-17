@@ -1,1 +1,21 @@
-/* */
+body{
+    padding: 0;
+    margin: 0;
+}
+/* Image grid*/
+.column{
+    float: left;
+}
+
+.column img{
+    width: 33%;
+    padding: none;
+    border-style: solid;
+    margin: 0%;
+}
+
+.row:after {
+    content: "";
+    display:table-row;
+    clear: both;
+}
