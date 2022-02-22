@@ -1,0 +1,40 @@
+.container {  display: grid;
+    grid-template-columns: 5% 13.3% 13.3% 5% 13.3% 13.3% 5% 13.3% 13.3% 5%;
+    grid-template-rows: 160px 50px 310px 50px 100px 200px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". form form . info info . cv cv ."
+      ". . . . . . . . . ."
+      ". RRSS RRSS RRSS RRSS RRSS RRSS RRSS RRSS ."
+      ". . . . . . . . . .";
+}
+  
+.form { 
+    grid-area: form; 
+    background-color: blue;
+    }
+  
+.info { 
+    grid-area: info; 
+    background-color: blue;
+    justify-self: center; 
+    align-self: center; 
+    }
+  
+.cv { 
+    grid-area: cv; 
+    background-color: blue;
+    justify-self: center; 
+    align-self: center; 
+}
+  
+.RRSS { 
+    grid-area: RRSS; 
+    background-color: blue;
+    justify-self: center; 
+    align-self: center; 
+}
+  
