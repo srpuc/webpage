@@ -1,6 +1,8 @@
-.container {  display: grid;
+.container {  
+    margin: 0;
+    display: grid;
     grid-template-columns: 5% 13.3% 13.3% 5% 13.3% 13.3% 5% 13.3% 13.3% 5%;
-    grid-template-rows: 160px 50px 310px 50px 100px 200px;
+    grid-template-rows: 160px 50px 350px 100px 100px 200px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -14,27 +16,35 @@
   
 .form { 
     grid-area: form; 
-    background-color: blue;
+    background-color: white;
+    border:5px solid;
+    border-style: dashed;
     }
   
 .info { 
     grid-area: info; 
-    background-color: blue;
-    justify-self: center; 
-    align-self: center; 
+    background-color: white;
+    border:5px solid;
+    border-style: dashed;
     }
   
 .cv { 
     grid-area: cv; 
-    background-color: blue;
-    justify-self: center; 
-    align-self: center; 
+    background-color: white;
+    border:5px solid;
+    border-style: dashed;
 }
   
 .RRSS { 
     grid-area: RRSS; 
-    background-color: blue;
-    justify-self: center; 
+    background-color: white;
+    border:5px solid;
+    border-style: dashed; 
     align-self: center; 
+    text-align: center;
 }
-  
+
+body {
+    background-image: url("../images/background/bac_contacto.jpg");
+    background-color: #cccccc;
+}
