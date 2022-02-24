@@ -1,3 +1,7 @@
+body{
+    margin-left: 0;
+}
+
 .container {  display: grid;
     grid-template-columns: 840px 50px 100px 300px 250px 200px 150px 50px;
     grid-template-rows: 100px 50px 300px 50px 150px 50px 150px 50px;
@@ -21,18 +25,21 @@
 .Text1 { grid-area: Text1; 
     background-color: white;
     border:5px solid;
-    border-style: dashed; 
+    border-style: solid;
+    border-color: #595445;
 }
   
 .Text2 { grid-area: Text2; 
     background-color: white;
     border:5px solid;
-    border-style: dashed; 
+    border-style: dashed;
+    border-color: #595445; 
 }
   
 .Text3 { grid-area: Text3; 
     background-color: white;
     border:5px solid;
-    border-style: dashed; 
+    border-style: dotted;
+    border-color: #595445;
 }
   

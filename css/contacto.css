@@ -1,8 +1,18 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+body{
+    margin:0;
+    font-family: myFirstFont;
+}
+
 .container {  
     margin: 0;
     display: grid;
     grid-template-columns: 5% 13.3% 13.3% 5% 13.3% 13.3% 5% 13.3% 13.3% 5%;
-    grid-template-rows: 160px 50px 350px 100px 100px 200px;
+    grid-template-rows: 160px 50px 450px 100px 100px 50px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -16,35 +26,61 @@
   
 .form { 
     grid-area: form; 
-    background-color: white;
+    background-color: #d2d2d2;
     border:5px solid;
-    border-style: dashed;
+    border-style: solid;
+    border-color: #595445;
+
     }
   
 .info { 
     grid-area: info; 
-    background-color: white;
+    background-color: #d2d2d2;
     border:5px solid;
-    border-style: dashed;
+    border-style: solid;
+    border-color: #595445;
     }
   
 .cv { 
     grid-area: cv; 
-    background-color: white;
+    background-color: #d2d2d2;
     border:5px solid;
-    border-style: dashed;
+    border-style: solid;
+    border-color: #595445;
 }
   
 .RRSS { 
     grid-area: RRSS; 
-    background-color: white;
+    background-color: #595445;
     border:5px solid;
     border-style: dashed; 
+    border-color: #b6b8ba;
     align-self: center; 
     text-align: center;
+    color: #a4755b;
 }
 
 body {
     background-image: url("../images/background/bac_contacto.jpg");
-    background-color: #cccccc;
+    background-color: #868183;
+}
+
+.izq{
+    float: left;
+    font-size: xx-large;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.cent{
+    float: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.der{
+    float: right;
+    font-size: xx-large;
+    margin-right: 30px;
+    font-weight: bold;
 }
