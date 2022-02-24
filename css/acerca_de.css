@@ -1,6 +1,6 @@
 .container {  display: grid;
     grid-template-columns: 840px 50px 100px 300px 250px 200px 150px 50px;
-    grid-template-rows: 100px 50px 300px 50px 150px 50px 150px 1fr;
+    grid-template-rows: 100px 50px 300px 50px 150px 50px 150px 50px;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
