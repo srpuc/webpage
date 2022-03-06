@@ -23,3 +23,8 @@ footer img {
     width: 33%;
     height:auto;
 }
+
+.separator {
+    padding-top: 160px;
+    color: white;
+}
