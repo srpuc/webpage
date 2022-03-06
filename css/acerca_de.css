@@ -1,5 +1,6 @@
 body{
-    margin-left: 0;
+    margin: 0;
+    background-color: white;
 }
 
 .container {  display: grid;
@@ -42,4 +43,24 @@ body{
     border-style: dotted;
     border-color: #595445;
 }
-  
+
+@media only screen and (max-width: 800px) {
+ 
+    .container {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 300px 150px 150px;
+        gap: 50px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        ". "
+        "Text1"
+        "Text2"
+        "Text3";
+    }
+    body{
+        background-color: #595445;
+    }
+ 
+}

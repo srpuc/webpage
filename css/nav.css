@@ -52,22 +52,21 @@ body{
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    .nav-right a{
-        font-size: 20px;
-    }
-    .barra {
+/*@media screen and (min-width: 801px) {
+    .nav-right a {
         font-size: 30px;
     }
-}
+}*/
 
-@media screen and (max-width: 600px) {
-    .nav-right a{
-        font-size: 20px;
-        padding: 10px;
-    }
-    .barra {
+@media screen and (max-width: 800px) {
+    .nav-right a {
         font-size: 30px;
-        padding: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
+
+    /*.barra{
+        font-size: 60px;
+        padding: 0px;
+    }*/
 }
