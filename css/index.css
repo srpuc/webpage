@@ -3,10 +3,28 @@
     padding: 0;  
 }
 
-.menu {
-    background-color:blueviolet;
+header {
+    position: sticky;
+    top: 0;
 }
 
-.icono {
-    position: relative;
+.animation {
+    margin-top: 100px;
+    width: 100%;
+    height: 90%;
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+}
+
+footer img {
+    width: 33%;
+    height:auto;
+}
+
+.separator {
+    padding-top: 160px;
+    color: white;
 }
