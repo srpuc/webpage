@@ -1,20 +1,41 @@
 body{
-    padding: 0;
-    margin: 0;
+    padding-top: 100px;
+    margin-left: auto;
     background-color: #868183;
 }
 /* Image grid*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0px;
+}
+
 .column{
-    float: left;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 0px;
 }
 
 .column img{
-    width: 33%;
-    padding: none;
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 100%;
 }
 
-.row:after {
-    content: "";
-    display:table-row;
-    clear: both;
-}
+/* Hacemos que se vean 2 columnas en vez de dos */
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

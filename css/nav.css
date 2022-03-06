@@ -1,31 +1,39 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+body{
+    font-family: myFirstFont;
+    font-size: x-large;
+}
+
 .nav{
     overflow: hidden;
     background-color: #595445;
     position: fixed;
     top: 0;
     width: 100%;
+    align-self: center;
     height: 100px;
 }
 
 .nav-right{
     float: right;
-    align-self: center; 
-    grid-area: form; 
     height: 100px;
+    align-self: center; 
 }
 
-.nav a{
+.nav-right a{
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 30px;
-    text-align: center;
-    
+    font-size: 40px;
+    padding: 30px;
 }
 
-.nav a:hover{
+.nav-right a:hover{
     background-color: #f2f2f2;
     color: #595445;
 }
@@ -33,7 +41,33 @@
 .nav img{
     height: 80px;
     width: 80px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.barra{
+    color: white;
+    font-size: 60px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-right a{
+        font-size: 20px;
+    }
+    .barra {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-right a{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .barra {
+        font-size: 30px;
+        padding: 0px;
+    }
 }
