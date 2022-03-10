@@ -16,6 +16,7 @@ body{
     width: 100%;
     align-self: center;
     height: 100px;
+    z-index: 4;
 }
 
 .nav-right{
