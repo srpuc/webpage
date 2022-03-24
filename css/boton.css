@@ -1,0 +1,31 @@
+#button {
+    display: inline-block;
+    background-color: #595445;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#button:active {
+    background-color: #555;
+}
+#button::after {
+    content: "\f062";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 100px;
+    color: #fff;
+}

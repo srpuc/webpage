@@ -10,14 +10,17 @@
 		}
 	</style>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/exposicion.css">
 	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/boton.css">
 	<!-- Head -->
 	<head>
 		<meta charset='UTF-8'>
 		<meta name='keywords' content='TAZEXPO' > 
 		<title> TAZEXPO - Exposicion </title>
 		<link rel="icon" href="../images/logo.png">
+		<script src="../js/jquery-3.6.0.min.js"></script>
 	</head>
 
 	<!-- Body -->
@@ -36,6 +39,8 @@
 
 		<h1> Exposición </h1>
 
+		<a id="button"></a>
+
 		<!-- Seccion de busqueda -->
 		<div>
 			<p> <label for="fname">Búsqueda:</label> <input type="text" id="fname" name="fname">
@@ -45,6 +50,10 @@
 				<i class="fa fa-search"></i>
 				<a href="javascript:void(0)" id="clear-btn">Borrar</a>
 			  </form>
+		</div>
+
+		<div>
+			
 		</div>
 
 		<!-- Tabla de exposición -->
@@ -72,5 +81,9 @@
 				 </div>
 			</div>
 		</div>
+
+		<script src="../js/jquery-3.6.0.min.js"></script>
+    	<script src="../js/boton.js"></script>
+
 	</body>
 </html>
