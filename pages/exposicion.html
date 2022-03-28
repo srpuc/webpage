@@ -37,14 +37,11 @@
 			</div>
 		</header>
 
-		<h1> Exposición </h1>
-
+		<!-- Boton subir arriba -->
 		<a id="button"></a>
 
 		<!-- Seccion de busqueda -->
 		<div>
-			<p> <label for="fname">Búsqueda:</label> <input type="text" id="fname" name="fname">
-			<button type="button">Buscar</button> </p></p>
 			<form action="a">
 				<input type="search" required>
 				<i class="fa fa-search"></i>
@@ -52,38 +49,38 @@
 			  </form>
 		</div>
 
-		<div>
-			
-		</div>
+		<!-- Imagen destacada (se rellena con js) -->
+		<div id="destacada"></div>
 
 		<!-- Tabla de exposición -->
 		<div>
 			<div class="row">
 				 <div class="column">
-					<img src="../images/expo_items/item_0/item_0.jpeg" alt="taza 0" >
-					<img src="../images/expo_items/item_1/item_1.jpeg" alt="taza 1" >  
-					<img src="../images/expo_items/item_2/item_2.jpeg" alt="taza 2" > 
+					<img class="expo" id="item_0" src="../images/expo_items/item_0/item_0.jpeg" alt="taza 0" >
+					<img class="expo" id="item_1" src="../images/expo_items/item_1/item_1.jpeg" alt="taza 1" >  
+					<img class="expo" id="item_2" src="../images/expo_items/item_2/item_2.jpeg" alt="taza 2" > 
 				 </div>
 				 <div class="column">
-					<img src="../images/expo_items/item_3/item_3.jpeg" alt="taza 3" >  
-					<img src="../images/expo_items/item_4/item_4.jpeg" alt="taza 4" >  
-					<img src="../images/expo_items/item_5/item_5.jpeg" alt="taza 5" >  
+					<img class="expo" id="item_3" src="../images/expo_items/item_3/item_3.jpeg" alt="taza 3" >  
+					<img class="expo" id="item_4" src="../images/expo_items/item_4/item_4.jpeg" alt="taza 4" >  
+					<img class="expo" id="item_5" src="../images/expo_items/item_5/item_5.jpeg" alt="taza 5" >  
 				 </div>
 				 <div class="column">
-					<img src="../images/expo_items/item_6/item_6.jpeg" alt="taza 6" >  
-					<img src="../images/expo_items/item_7/item_7.jpeg" alt="taza 7" >  
-					<img src="../images/expo_items/item_8/item_8.jpeg" alt="taza 8" >  
+					<img class="expo" id="item_6" src="../images/expo_items/item_6/item_6.jpeg" alt="taza 6" >  
+					<img class="expo" id="item_7" src="../images/expo_items/item_7/item_7.jpeg" alt="taza 7" >  
+					<img class="expo" id="item_8" src="../images/expo_items/item_8/item_8.jpeg" alt="taza 8" >  
 				 </div>
 				 <div class="column">
-					<img src="../images/expo_items/item_9/item_9.jpeg" alt="taza 9" >  
-					<img src="../images/expo_items/item_10/item_10.jpeg" alt="taza 10" >  
-					<img src="../images/expo_items/item_11/item_11.jpeg" alt="taza 11" >  
+					<img class="expo" id="item_9" src="../images/expo_items/item_9/item_9.jpeg" alt="taza 9" >  
+					<img class="expo" id="item_10" src="../images/expo_items/item_10/item_10.jpeg" alt="taza 10" >  
+					<img class="expo" id="item_11" src="../images/expo_items/item_11/item_11.jpeg" alt="taza 11" >  
 				 </div>
 			</div>
 		</div>
 
 		<script src="../js/jquery-3.6.0.min.js"></script>
     	<script src="../js/boton.js"></script>
+		<script src="../js/exposicion.js"></script>
 
 	</body>
 </html>

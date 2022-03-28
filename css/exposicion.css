@@ -3,17 +3,28 @@ body{
     margin-left: auto;
     background-color: #868183;
 }
+
+#destacada img{
+  width: 700px;
+  display: inline-block;
+}
+
+#destacada h1{
+  display: inline;
+  vertical-align: middle;
+}
+
 /* Image grid*/
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px;
 }
 
 .column{
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 0px;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0px;
 }
 
 .column img{
@@ -108,7 +119,7 @@ form:valid a {
       flex: 50%;
       max-width: 50%;
     }
-  }
+}
   
 
 @media screen and (max-width: 600px) {
