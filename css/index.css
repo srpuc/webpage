@@ -1,6 +1,3 @@
-*, html {
-    margin: 0;
-    padding: 0;  
 html {
     height: 100vh; 
 }
@@ -45,3 +42,24 @@ canvas {
     max-width: 100vw;
     max-height: 100vh;
 }
+
+#container {
+    padding-top: 100px;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  
+  #animation_lenght {
+    height: 8000px;
+    position: relative;
+  }
+  
+  #animation_element {
+    height: 400px;
+    position: sticky;
+    top: 0;
+  }
+  
+  #animation_image {
+    width: 100%;
+  }

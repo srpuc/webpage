@@ -1,53 +1,39 @@
-const html = document.documentElement;
-const canvas = document.getElementById("animation_canvas");
-const context = canvas.getContext("2d");
+var scroll = 0;
 
-const frameCount = 30;
+const frameCount = 120;
 
-const currentFrame = index => 
-(
-    "../images/animations/${index.toString().padStart(4, '0')}.jpg"
-)
+let frameIndex = 0;
 
+//precarga de imagenes
 const preloadImages = () => {
-    for (let i = 1; i < frameCount; i++) 
-    {
-        const img = new Image();
-        img.src = currentFrame(i);
-    }
+  for (let i = 0; i <= frameCount; i++) 
+  {
+      const img = new Image();
+      img.src = "images/animations/" + i.toString().padStart(4,'0'); + ".png";
+  }
 }
 
-const img = new Image();
-img.src = currentFrame(1);
-
-canvas.width = 1158;
-canvas.height = 770;
-
-img.onload=function(){
-    context.drawImage(img, 0, 0);
+//cambiar imagen
+function update_image() {
+  var img_name = "images/animations/" + frameIndex + ".png";
+  document.getElementById("animation_image").src = img_name;
 }
 
-const updateImage = index => {
-    img.src = currentFrame(index);
-    context.drawImage(img, 0, 0);
+//funcion llamada por el event listener
+function scroll_function() {
+
+  const scrollFraction = document.getElementById("container").scrollTop / (document.getElementById("animation_lenght").clientHeight - document.getElementById("container").clientHeight);
+  
+  const index = Math.min( frameCount , Math.ceil( scrollFraction * frameCount ) );
+  frameIndex = index.toString().padStart(4,'0');
+
+  update_image();
+
+  document.getElementById("canvas").innerHTML = "Scroll: " + scrollFraction + " | Frame: " + frameIndex ;
+
 }
 
-window.addEventListener('scroll', () => {
-
-    const scrollTop = html.scrollTop;
-    const maxScrollTop = html.scrollHeight - window.innerHeight;
-
-    const scrollFraction = scrollTop / maxScrollTop;
-
-    const frameIndex = Math.min(
-        frameCount -1,
-        Math.ceil(scrollFraction * frameCount)
-    );
-
-    requestAnimationFrame( () => updateImage(frameIndex + 1) )
-
-});
+//event listener para el container de la animacion
+document.getElementById("container").addEventListener( "scroll", scroll_function );
 
 preloadImages()
-
-console.log("end");
