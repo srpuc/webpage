@@ -55,8 +55,11 @@ function continuar_scroll() {
 
   const wholeFraction = ( document.documentElement.scrollTop - document.documentElement.clientTop ) / document.documentElement.clientHeight ;
 
-  const fade = ( -2 * wholeFraction ) + 1;
-  document.getElementById( "container" ).style.opacity = fade;
+  const fadeAnimation = ( -2 * wholeFraction ) + 1;
+  document.getElementById( "container" ).style.opacity = fadeAnimation;
+
+  const fadeText = ( 4 * wholeFraction ) - 3 ;
+  document.getElementById("footer_text").style.opacity = fadeText;
   
 
 }
