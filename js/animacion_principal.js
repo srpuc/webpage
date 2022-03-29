@@ -1,7 +1,7 @@
 var scroll = 0;
+var totalScroll = 0;
 
 const frameCount = 120;
-
 let frameIndex = 0;
 
 //precarga de imagenes
@@ -27,13 +27,15 @@ function scroll_function() {
   const index = Math.min( frameCount , Math.ceil( scrollFraction * frameCount ) );
   frameIndex = index.toString().padStart(4,'0');
 
-  update_image();
+  const fadeFraction = -2 * scrollFraction + 1;
+  document.getElementById("animation_text").style.opacity = fadeFraction;
 
-  document.getElementById("canvas").innerHTML = "Scroll: " + scrollFraction + " | Frame: " + frameIndex ;
+  update_image();
 
 }
 
 //event listener para el container de la animacion
 document.getElementById("container").addEventListener( "scroll", scroll_function );
+window.addEventListener( "scroll", scroll_function );
 
 preloadImages()
