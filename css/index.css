@@ -11,6 +11,7 @@ div::-webkit-scrollbar {
 /*ELEMENTES BASIC SETTIGNS*/
 html {
     height: 100vh; 
+    scroll-behavior: smooth;
 }
 
 header {
@@ -26,41 +27,45 @@ footer {
 body {
 
     overflow-x: hidden;
-    height: 500vh;
-    background: white;
+    height: 200vh;
+    background: #FDFDFD;
     margin: 0%;
 }
 
 
 /*MAIN ANIMATION COMPONENTS*/
 #container {
-
+  z-index: 1;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll; 
 
-  overflow-y: scroll;
+  height: 95vh;
 
   justify-content: center;
-    
-  aspect-ratio: 1.83 / 1;
 
 }
   
 #animation_lenght {
+  z-index: -1;
   height: 8000px;
   position: relative;
+  scroll-behavior: smooth;
 }
   
 #animation_element {
-  aspect-ratio: 1.83 / 1;
+  z-index: -1;
+  height: 95vh;
   position: sticky;
   top: 0;
   background-color: #FDFDFD;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
 }
   
 #animation_image {
-  width: 100%;
+  aspect-ratio: 1920 / 1026 ;
   z-index: 1;
 }
 

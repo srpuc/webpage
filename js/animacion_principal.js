@@ -4,13 +4,29 @@ var totalScroll = 0;
 const frameCount = 120;
 let frameIndex = 0;
 
+let imagenes = [];
+
 //precarga de imagenes
 const preloadImages = () => {
   for (let i = 0; i <= frameCount; i++) 
   {
-      const img = new Image();
-      img.src = "images/animations/" + i.toString().padStart(4,'0'); + ".png";
+      imagenes[i] = new Image();
+      imagenes[i].src = "images/animations/" + i.toString().padStart(4,'0'); + ".png";
   }
+}
+
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
 }
 
 //cambiar imagen
@@ -34,8 +50,21 @@ function scroll_function() {
 
 }
 
+//funcion que continua el la animacion con el scroll principal
+function continuar_scroll() {
+
+  const wholeFraction = ( document.documentElement.scrollTop - document.documentElement.clientTop ) / document.documentElement.clientHeight ;
+
+  const fade = ( -2 * wholeFraction ) + 1;
+  document.getElementById( "container" ).style.opacity = fade;
+  
+
+}
+
 //event listener para el container de la animacion
 document.getElementById("container").addEventListener( "scroll", scroll_function );
-window.addEventListener( "scroll", scroll_function );
+window.addEventListener( "scroll", continuar_scroll );
+
+addLoadEvent(preloadImages);
 
 preloadImages()

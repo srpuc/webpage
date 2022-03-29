@@ -22,13 +22,19 @@ header {
 #nav{
     overflow: hidden;
     background-color: #FDFDFD;
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: calc( 100vw - 2vw );
+    width: calc( 100vw);
     align-self: center;
-    height: calc( 5vh - 2vh );
-    padding: 1vh;
+    height: calc( 5vh );
+    padding: 0vh;
     z-index: 4;
+}
+
+#nav ul{
+    padding: 1vh;
+    width: calc( 100vw - 2vh );
+    height: calc( 5vh - 2vh);
 }
 
 #nav li{
