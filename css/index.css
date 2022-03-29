@@ -56,7 +56,7 @@ body {
   aspect-ratio: 1.83 / 1;
   position: sticky;
   top: 0;
-  background-color: black;
+  background-color: #FDFDFD;
 }
   
 #animation_image {
@@ -74,7 +74,7 @@ body {
   top: calc( 95%/2 - 20vh/2 );
   left: calc( 50% - 50vw/2 );
 
-  color: #ffffff;
+  color: #FDFDFD;
   text-align: center;
 
 }
