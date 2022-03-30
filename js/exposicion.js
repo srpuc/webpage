@@ -20,18 +20,16 @@ $(document).ready(function(){
 });
 
 $(".expo").click(function(){
-    $("#destacada_img").html("");
     $("#destacada_texto").html("");
-    $("#destacada_desc").html("");
+    $("#destacada_img").html("");
     var img=$(this).attr("id");
     var nombre=$(this).attr("alt");
     $('#ventana').hide();
     $('.row').css('opacity','0.3');
 
      $('#ventana').show( "slow" ,function(){
-        $("#destacada_desc").html("<p>Autor: "+autor[img.split('_')[1]]+".</p>"+"<p>Color: "+color[img.split('_')[1]]+".</p>");
         $("#destacada_img").html("<img id=\"img_destacada\" src=\"../images/expo_items/"+img+"/"+img+".jpeg\" alt=\""+nombre+"\">");
-        $("#destacada_texto").html("<h1>"+nombre+"</h1>");
+        $("#destacada_texto").html("<h1>"+nombre+"</h1>"+"<p>Autor: "+autor[img.split('_')[1]]+".</p>"+"<p>Color: "+color[img.split('_')[1]]+".</p>");
     });
 });
 
