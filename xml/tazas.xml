@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TAZAS>
+    <taza>
+        <id> item_0 </id>
+        <nombre> Taza 0 </nombre>
+        <color> blanco </color>
+        <autor> Pablo U. C. </autor>
+    </taza>
+    <taza>
+        <id> item_1 </id>
+        <nombre> Taza 1 </nombre>
+        <color> negro </color>
+        <autor> Carlos R. R. </autor>
+    </taza>
+    <taza>
+        <id> item_2 </id>
+        <nombre> Taza 2 </nombre>
+        <color> azul </color>
+        <autor> Pablo U. C. </autor>
+    </taza>
+    <taza>
+        <id> item_3 </id>
+        <nombre> Taza 3 </nombre>
+        <color> dorado </color>
+        <autor> Pablo U. C. </autor>
+    </taza>
+    <taza>
+        <id> item_4 </id>
+        <nombre> Taza 4 </nombre>
+        <color> Púrpura </color>
+        <autor> Carlos R. R. </autor>
+    </taza>
+    <taza>
+        <id> item_5 </id>
+        <nombre> Taza 5 </nombre>
+        <color> verde </color>
+        <autor> Pablo U. C. </autor>
+    </taza>
+    <taza>
+        <id> item_6 </id>
+        <nombre> Taza 6 </nombre>
+        <color> blanco </color>
+        <autor> Carlos C. C. </autor>
+    </taza>
+    <taza>
+        <id> item_7 </id>
+        <nombre> Taza 7 </nombre>
+        <color> dorado </color>
+        <autor> Pablo U. C. </autor>
+    </taza>
+    <taza>
+        <id> item_8 </id>
+        <nombre> Taza 8 </nombre>
+        <color> plateado </color>
+        <autor> Pablo U. C. </autor>
+    </taza>
+    <taza>
+        <id> item_9 </id>
+        <nombre> Taza 9 </nombre>
+        <color> negro </color>
+        <autor> Carlos R. R. </autor>
+    </taza>
+    <taza>
+        <id> item_10 </id>
+        <nombre> Taza 10 </nombre>
+        <color> rosa </color>
+        <autor> Pablo U. C. </autor>
+    </taza>
+    <taza>
+        <id> item_11 </id>
+        <nombre> Taza 11 </nombre>
+        <color> dorado </color>
+        <autor> Pablo U. C. </autor>
+    </taza>
+</TAZAS>
