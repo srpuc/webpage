@@ -3,12 +3,13 @@
 
 
 <!-- TAZEXPO SOURCE CODE -->
-<html>
+<html lang="ES" >
 
 
 	<!-- Web Site Head -->
 	<head>
-		<meta charset='UTF-8'>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
 		<meta name='keywords' content='TAZEXPO' > 
 		<title> TAZEXPO - Inicio </title>
 		<link rel="icon" href="images/logo.png">
@@ -22,44 +23,48 @@
 		<!-- Header -->
 		<header>
 
-			<nav id="nav">
+			<nav class="nav">
 
-				<ul id="nav" >
+				<ul >
 					<li> <a href="index.html"> <img src="images/logo.png" alt="logo" ></a> </li>
-					<li style="float:right" > <a href="pages/exposicion.html"> Exposición </a> </li>
-					<li style="float:right" > <a href="pages/acerca_de.html"> Acerca de </a> </li>
-					<li style="float:right" > <a href="pages/contacto.html"> Contacto </a> </li>
+					<li class="right-side" > <a href="pages/exposicion.html"> Exposición </a> </li>
+					<li class="right-side" > <a href="pages/acerca_de.html"> Acerca de </a> </li>
+					<li class="right-side" > <a href="pages/contacto.html"> Contacto </a> </li>
 				</ul>
 
 			</nav>
 
 		</header>
 
-		<!-- Main Animation Div -->
-		<div id = "container" >
-            <div id = "animation_lenght">
-                <div id = "animation_element">
+		<div class="section" id="section">
 
-                    <img src="images/animations/0000.png" id = "animation_image" > 
+			<!-- Main Animation Div -->
+			<div id = "container" class="section__item" >
+				<div id = "animation_lenght">
+					<div id = "animation_element">
 
-					<div id="animation_text" >
-						<p>TAZEXPO</p>
+						<img src="images/animations/0000.png" id = "animation_image" alt="animation_image"> 
+
+						<div id="animation_text" >
+							<p>TAZEXPO</p>
+						</div>
+
 					</div>
-
-                </div>
-            </div>
-        </div>
-
-		<!-- Separator Div -->
-
-		<!-- Footer -->
-		<footer>
-			
-			<div id="footer_text">
-				<a href="pages/exposicion.html" >Are you ready to learn ?</a>
+				</div>
 			</div>
-		
-		</footer>
+
+			<!-- Separator Div -->
+
+			<!-- Footer -->
+			<footer class="section__item">
+				
+				<div id="footer_text">
+					<a href="pages/exposicion.html" >Are you ready to learn ?</a>
+				</div>
+			
+			</footer>
+
+		</div>
 		
 		<script src="js/animacion_principal.js"></script>
 

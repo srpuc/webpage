@@ -1,17 +1,20 @@
-var scroll = 0;
-var totalScroll = 0;
 
+// DECLARACION DE VARIABLES
+// ------------------------
 const frameCount = 120;
 let frameIndex = 0;
-
 let imagenes = [];
 
-//precarga de imagenes
+
+// FUNCIONES: PRECARGA DE IMAGENES
+// -------------------------------
 const preloadImages = () => {
   for (let i = 0; i <= frameCount; i++) 
   {
       imagenes[i] = new Image();
-      imagenes[i].src = "images/animations/" + i.toString().padStart(4,'0'); + ".png";
+      imagenes[i].src = "images/animations/" + i.toString().padStart(4,'0') + ".png";
+      imagenes[i].id = "animation_image";
+      imagenes[i].alt = "animation_image";
   }
 }
 
@@ -29,19 +32,21 @@ function addLoadEvent(func) {
 	}
 }
 
-//cambiar imagen
+// FUNCION: SUSTITUR IMAGEN
+// ------------------------
 function update_image() {
-  var img_name = "images/animations/" + frameIndex + ".png";
-  document.getElementById("animation_image").src = img_name;
+  document.getElementById("animation_image").replaceWith( imagenes[frameIndex] );
 }
 
-//funcion llamada por el event listener
-function scroll_function() {
+
+// FUNCION: ANIMACION PRINCIPAL VINCULADA AL SCROLL
+// ------------------------------------------------
+function scroll_animacion() {
 
   const scrollFraction = document.getElementById("container").scrollTop / (document.getElementById("animation_lenght").clientHeight - document.getElementById("container").clientHeight);
   
-  const index = Math.min( frameCount , Math.ceil( scrollFraction * frameCount ) );
-  frameIndex = index.toString().padStart(4,'0');
+  frameIndex = Math.min( frameCount , Math.ceil( scrollFraction * frameCount ) );
+  
 
   const fadeFraction = -2 * scrollFraction + 1;
   document.getElementById("animation_text").style.opacity = fadeFraction;
@@ -50,10 +55,12 @@ function scroll_function() {
 
 }
 
-//funcion que continua el la animacion con el scroll principal
-function continuar_scroll() {
 
-  const wholeFraction = ( document.documentElement.scrollTop - document.documentElement.clientTop ) / document.documentElement.clientHeight ;
+// FUNCION: ANIMACION TEXTO VINCULADA AL SCROLL
+// --------------------------------------------
+function scroll_section() {
+
+  const wholeFraction = ( document.getElementById("section").scrollTop - document.getElementById("section").clientTop ) / document.getElementById("section").clientHeight ;
 
   const fadeAnimation = ( -2 * wholeFraction ) + 1;
   document.getElementById( "container" ).style.opacity = fadeAnimation;
@@ -64,10 +71,13 @@ function continuar_scroll() {
 
 }
 
-//event listener para el container de la animacion
-document.getElementById("container").addEventListener( "scroll", scroll_function );
-window.addEventListener( "scroll", continuar_scroll );
 
+// AÑADIR EVENTOS
+// --------------
+document.getElementById("container").addEventListener( "scroll", scroll_animacion );
+document.getElementById("section").addEventListener( "scroll", scroll_section );
+
+
+// PRECARGAR IMAGENES
+// ------------------
 addLoadEvent(preloadImages);
-
-preloadImages()
