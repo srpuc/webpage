@@ -2,8 +2,8 @@
 // DECLARACION DE VARIABLES
 // ------------------------
 const frameCount = 120;
-let frameIndex = 0;
-let imagenes = [];
+var frameIndex = 0;
+var imagenes = [];
 
 
 // FUNCIONES: PRECARGA DE IMAGENES
@@ -12,7 +12,7 @@ const preloadImages = () => {
   for (let i = 0; i <= frameCount; i++) 
   {
       imagenes[i] = new Image();
-      imagenes[i].src = "images/animations/" + i.toString().padStart(4,'0') + ".png";
+      imagenes[i].src = "images/animations/index/" + i.toString().padStart(4,'0') + ".png";
       imagenes[i].id = "animation_image";
       imagenes[i].alt = "animation_image";
   }
