@@ -50,12 +50,11 @@ header {
     text-decoration: none;
     height: 100%;
     background-color: #FDFDFD;
-    color: black;
+    color: #323232;
 }
 
 #nav a:hover {
-    background-color: #323232;
-    color: #FDFDFD;
+    color: #6b6b6b;
 }
 
 #nav img {

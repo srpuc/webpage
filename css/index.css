@@ -34,6 +34,15 @@ footer {
   font-size: 9vh;
 }
 
+#footer_text a {
+  text-decoration: none;
+  color: #323232;
+}
+
+#footer_text a:hover {
+  color: #6b6b6b;
+}
+
 body {
 
     overflow-x: hidden;
@@ -77,7 +86,6 @@ body {
 }
   
 #animation_image {
-  
   z-index: -1;
 }
 
@@ -99,7 +107,4 @@ body {
 #animation_text p {
   margin: 0;
   font-size: 15vh;
-
-  opacity: 1;
-
 }
