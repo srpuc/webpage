@@ -18,7 +18,7 @@ h1{
     margin: 0;
     display: grid;
     grid-template-columns: 5% 13.3% 13.3% 5% 13.3% 13.3% 5% 13.3% 13.3% 5%;
-    grid-template-rows: 160px 50px 450px 100px 100px 50px;
+    grid-template-rows: 130px 50px 450px 100px 100px 50px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -102,6 +102,7 @@ body {
     font-size: 23px;
     box-shadow: 4px 4px 9px #000000;
     padding: 10px 33px;
+    margin-top: 20px;
     border-radius: 10px;
     border: 2px solid #000000;
     background: #595445;
@@ -110,6 +111,14 @@ body {
 .testbutton:hover {
     color: #595445 !important;
     background: #A4755B;
+}
+
+#comentario{
+    width: 100%;
+}
+
+#email{
+    width: 100%;
 }
 
 @media only screen and (max-width: 800px) {

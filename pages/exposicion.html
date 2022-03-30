@@ -20,7 +20,6 @@
 		<meta name='keywords' content='TAZEXPO' > 
 		<title> TAZEXPO - Exposicion </title>
 		<link rel="icon" href="../images/logo.png">
-		<script src="../js/jquery-3.6.0.min.js"></script>
 	</head>
 
 	<!-- Body -->
@@ -44,17 +43,14 @@
 		<!-- Boton subir arriba -->
 		<a id="button"></a>
 
-		<!-- Seccion de busqueda -->
-		<div>
-			<form action="a">
-				<input type="search" required>
-				<i class="fa fa-search"></i>
-				<a href="javascript:void(0)" id="clear-btn">Borrar</a>
-			  </form>
-		</div>
-
 		<!-- Imagen destacada (se rellena con js) -->
-		<div id="destacada"></div>
+        <div id="ventana">
+            <a id="cruz"></a>
+            <div id="destacada">
+                <div id="destacada_img"></div>
+                <div id="destacada_texto"></div>
+            </div>
+        </div>
 
 		<!-- Tabla de exposición -->
 		<div>
@@ -85,6 +81,6 @@
 		<script src="../js/jquery-3.6.0.min.js"></script>
     	<script src="../js/boton.js"></script>
 		<script src="../js/exposicion.js"></script>
-
+		<script src="../js/jquery-3.6.0.min.js"></script>
 	</body>
 </html>
