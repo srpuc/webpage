@@ -18,7 +18,7 @@
 
 body{
     font-family: myFirstFont;
-    font-size: x-large;
+    font-size::x-large;
 }
 
 ol,ul {
@@ -30,6 +30,9 @@ ol,ul {
 header {
     height: 5vh;
     width: 100vw;
+    z-index: 1;
+    position: sticky;
+    top: 0;
 }
 
 .nav{
