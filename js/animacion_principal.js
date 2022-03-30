@@ -43,12 +43,12 @@ function update_image() {
 // ------------------------------------------------
 function scroll_animacion() {
 
-  const scrollFraction = document.getElementById("container").scrollTop / (document.getElementById("animation_lenght").clientHeight - document.getElementById("container").clientHeight);
+  var scrollFraction = document.getElementById("container").scrollTop / (document.getElementById("animation_lenght").clientHeight - document.getElementById("container").clientHeight);
   
   frameIndex = Math.min( frameCount , Math.ceil( scrollFraction * frameCount ) );
   
 
-  const fadeFraction = -2 * scrollFraction + 1;
+  var fadeFraction = -2 * scrollFraction + 1;
   document.getElementById("animation_text").style.opacity = fadeFraction;
 
   update_image();
@@ -60,12 +60,12 @@ function scroll_animacion() {
 // --------------------------------------------
 function scroll_section() {
 
-  const wholeFraction = ( document.getElementById("section").scrollTop - document.getElementById("section").clientTop ) / document.getElementById("section").clientHeight ;
+  var wholeFraction = ( document.getElementById("section").scrollTop - document.getElementById("section").clientTop ) / document.getElementById("section").clientHeight ;
 
-  const fadeAnimation = ( -2 * wholeFraction ) + 1;
+  var fadeAnimation = ( -2 * wholeFraction ) + 1;
   document.getElementById( "container" ).style.opacity = fadeAnimation;
 
-  const fadeText = ( 4 * wholeFraction ) - 3 ;
+  var fadeText = ( 4 * wholeFraction ) - 3 ;
   document.getElementById("footer_text").style.opacity = fadeText;
   
 
